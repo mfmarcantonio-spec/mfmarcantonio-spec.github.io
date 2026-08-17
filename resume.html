@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maria Marcantonio | Résumé</title>
+  <style>
+    :root { --ink:#15243a; --muted:#5d6878; --accent:#1c5d99; --line:#dce3ea; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#edf1f5; color:var(--ink); font-family:Arial, Helvetica, sans-serif; line-height:1.4; }
+    .toolbar { max-width:900px; margin:24px auto 0; display:flex; gap:10px; justify-content:flex-end; padding:0 18px; }
+    .toolbar a,.toolbar button { border:0; border-radius:999px; padding:10px 16px; font-weight:700; cursor:pointer; background:white; color:var(--ink); text-decoration:none; }
+    .toolbar button { background:var(--ink); color:white; }
+    .page { width:min(900px, calc(100% - 36px)); margin:18px auto 40px; background:white; padding:52px 58px; box-shadow:0 14px 45px rgba(21,36,58,.12); }
+    h1 { margin:0; font-size:2.25rem; letter-spacing:-.04em; }
+    .headline { color:var(--accent); font-weight:700; margin-top:6px; }
+    .contact { margin-top:12px; color:var(--muted); font-size:.92rem; }
+    section { margin-top:28px; }
+    h2 { margin:0 0 12px; font-size:.86rem; text-transform:uppercase; letter-spacing:.16em; color:var(--accent); border-bottom:1px solid var(--line); padding-bottom:6px; }
+    .entry { display:grid; grid-template-columns:1fr auto; gap:6px 18px; margin:0 0 18px; }
+    .entry h3 { margin:0; font-size:1.02rem; }
+    .entry .role { color:var(--muted); font-style:italic; }
+    .entry .date { font-size:.85rem; font-weight:700; white-space:nowrap; }
+    .entry ul { grid-column:1 / -1; margin:6px 0 0; padding-left:19px; }
+    .entry li { margin:3px 0; }
+    .summary { color:var(--muted); margin:0; }
+    .skills { display:grid; grid-template-columns:1fr 1fr; gap:10px 24px; }
+    .skills p { margin:0; }
+    .label { font-weight:700; }
+    @media(max-width:650px){
+      .page { padding:34px 26px; }
+      .entry { grid-template-columns:1fr; }
+      .entry .date { grid-row:2; }
+      .skills { grid-template-columns:1fr; }
+    }
+    @media print {
+      body { background:white; font-size:10.5pt; }
+      .toolbar { display:none; }
+      .page { width:100%; margin:0; padding:.4in .5in; box-shadow:none; }
+      section { margin-top:18px; }
+      .entry { margin-bottom:12px; }
+      a { color:inherit; text-decoration:none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="index.html">← Portfolio</a>
+    <button onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <main class="page">
+    <header>
+      <h1>Maria Marcantonio</h1>
+      <div class="headline">Industrial Distribution | Technical Marketing | Technical Sales Support</div>
+      <div class="contact">College Station, TX • mfmarcantonio2004@gmail.com</div>
+    </header>
+
+    <section>
+      <h2>Profile</h2>
+      <p class="summary">
+        Texas A&amp;M Industrial Distribution student with experience in technical marketing, engineering research,
+        industrial product support, content strategy, and sales enablement. Skilled at translating technical information
+        into clear customer-facing resources and organizing complex product information for practical use.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div>
+          <h3>Texas A&amp;M University</h3>
+          <div class="role">B.S. Industrial Distribution</div>
+        </div>
+        <div class="date">Expected 2027</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div>
+          <h3>RS Americas</h3>
+          <div class="role">Technical Marketing Intern</div>
+        </div>
+        <div class="date">Summer 2026</div>
+        <ul>
+          <li>Contributed to connector-category content recommendations focused on SEO, AI-search visibility, applications, FAQs, technical guidance, and keyword strategy for engineers and technical buyers.</li>
+          <li>Built a searchable repository of roughly three years of RS-produced YouTube content with links, summaries, customer-engagement examples, and reusable marketing and sales-enablement opportunities.</li>
+          <li>Supported a Festo + RS co-branded brochure by researching accurate RS series links and improving link and QR-code user experience.</li>
+          <li>Set up the Monday.com project structure for a web-recovery content campaign and researched Group-created material for potential U.S. and Canada localization.</li>
+          <li>Supported data-center Expert Advice research and presented a Panduit labeling-solutions project covering specifications, workflow, QR-code opportunities, parts-list cross-referencing, stocking, and RS value-add.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div>
+          <h3>Swagelok Southeast Texas</h3>
+          <div class="role">Intern</div>
+        </div>
+        <div class="date">Summer 2025</div>
+        <ul>
+          <li>Developed customer-facing technical and commercial experience within an industrial fluid-system organization.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div>
+          <h3>Southwest Research Institute</h3>
+          <div class="role">Intern</div>
+        </div>
+        <div class="date">May–Aug 2024</div>
+        <ul>
+          <li>Used P&amp;IDs to assemble and operate flameless-combustion testing rigs.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div>
+          <h3>Texas A&amp;M Turbomachinery Laboratory — TRACE Program</h3>
+          <div class="role">Intern</div>
+        </div>
+        <div class="date">2024</div>
+        <ul>
+          <li>Monitored gases used in shock-tube research and helped build a mini testing rig for a client project.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Leadership &amp; Honors</h2>
+      <div class="entry">
+        <div>
+          <h3>Alpha Epsilon Phi</h3>
+          <div class="role">Member &amp; Public Relations Chair</div>
+        </div>
+        <div class="date">2023–Present</div>
+      </div>
+      <p class="summary">TRACE Program Scholarship • Gene Haas Foundation Scholarship</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <p><span class="label">Marketing:</span> Technical content, SEO research, AI-search content strategy, sales enablement, Canva</p>
+        <p><span class="label">Productivity:</span> Excel, PowerPoint, Word, Monday.com, research organization</p>
+        <p><span class="label">Technical:</span> P&amp;ID interpretation, assembly, machining, testing-rig support</p>
+        <p><span class="label">CAD:</span> SolidWorks, Autodesk Fusion 360</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
