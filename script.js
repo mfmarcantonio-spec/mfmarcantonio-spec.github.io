@@ -1,36 +1,5 @@
-const year = document.getElementById("year");
-if (year) year.textContent = new Date().getFullYear();
-
-const toggle = document.querySelector(".nav-toggle");
-const nav = document.querySelector(".nav");
-
-if (toggle && nav) {
-  toggle.addEventListener("click", () => {
-    const open = nav.classList.toggle("open");
-    toggle.setAttribute("aria-expanded", String(open));
-  });
-
-  nav.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("open");
-      toggle.setAttribute("aria-expanded", "false");
-    });
-  });
-}
-
-const revealElements = document.querySelectorAll(".reveal");
-
-if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.12 });
-
-  revealElements.forEach(el => observer.observe(el));
-} else {
-  revealElements.forEach(el => el.classList.add("visible"));
-}
+document.getElementById("year").textContent=new Date().getFullYear();
+const toggle=document.querySelector(".nav-toggle"),nav=document.querySelector(".nav");
+if(toggle&&nav){toggle.addEventListener("click",()=>{const o=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",String(o))});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")))}
+const els=document.querySelectorAll(".reveal");
+if("IntersectionObserver" in window){const ob=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");ob.unobserve(e.target)}}),{threshold:.12});els.forEach(e=>ob.observe(e))}else els.forEach(e=>e.classList.add("visible"));
